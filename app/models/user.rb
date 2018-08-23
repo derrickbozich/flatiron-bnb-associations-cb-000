@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   has_many :reservations, through: :listings
 
   def trips
+    binding.pry
     self.reservations.all
   end
 end
