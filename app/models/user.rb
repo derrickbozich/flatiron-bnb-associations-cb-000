@@ -10,9 +10,9 @@ has_many :reservations, through: :listings
 
 
 
-
-  def trips
-    # binding.pry
-    self.reservations.all
-  end
+  # 
+  # def trips
+  #   # binding.pry
+  #   self.reservations.all
+  # end
 end
