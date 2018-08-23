@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
 
   def trips
-    # binding.pry
+    binding.pry
     self.reservations.all
   end
 end
