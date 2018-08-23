@@ -4,4 +4,8 @@ class User < ActiveRecord::Base
   has_many :reviews, :foreign_key => 'guest_id'
 
   has_many :reservations, through: :listings
+
+  def trips
+    self.reservations.all
+  end
 end
